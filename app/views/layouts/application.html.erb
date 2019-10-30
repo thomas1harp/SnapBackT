@@ -12,6 +12,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'Logo' do %>
          <div class="circle">
         <br />
         You Know
@@ -20,7 +21,7 @@
         <br />
         to code often.
       </div>
-
+    <% end %>
       <div>
         LOGO
       </div>
@@ -28,7 +29,7 @@
         Splurting out unsolicited advice about entrepreneurship since 2016
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -46,7 +47,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-6 footer-blurb">
         Don't be a stranger, hit me up, <a href="[YOUR_PORTFOLIO_URL]">TJ Harp. </a><br />
